@@ -14,41 +14,77 @@
 <body>
 
     <ol>
-        <li> I am a proud Leo. </li> <input type="text" id="sign">  <button id="check1">Check</button>
-        <li> I have a beautiful little girl thats 7 years old.</li> <input type="text" id="child"> <button>Check</button>
-        <li> Coding was what I wanted to do in highschool.  </li> <input type="text" id="HS"> <button>Check</button>
-        <li> When i get old I want to live on a farm with a few farm animals.</li> <input type="text" id="old"> <button>Check</button>
-        <li> My favorite planet is Jupiter because Earth is ghetto.</li> <input type="text" id="planet"> <button>Check</button>
+        <li> I am a proud Leo. </li> <input type="text" id="sign">  <button id="check1" onclick="check1()">Check</button> 
+        <li> I have a beautiful little girl thats 7 years old.</li> <input type="text" id="child"> <button id="check2" onclick="check2 ()">Check</button>
+        <li> Coding was what I wanted to do in highschool.  </li> <input type="text" id="HS"> <button id="check3" onclick="check3 ()">Check</button>
+        <li> When i get old I want to live on a farm with a few farm animals.</li> <input type="text" id="old"> <button id="check4" onclick="check4 ()">Check</button>
+        <li> My favorite planet is Jupiter because Earth is ghetto.</li> <input type="text" id="planet"> <button id="check5" onclick="check5()">Check</button>
     </ol>
 
 
 <script>
-    function check1(){
-        let sign = document.getElementById("sign").value
-        console.log("sign",sign)
 
-        if ("yes"){
+
+    function check1(){
+        let answer = document.getElementById("sign").value
+        if (answer == "yes"|| answer == "y"){
             alert("Absoultly not try again");
         } else {
             alert("Correct! I was Born Dec 13th which makes me a indepedent, free spirited SAGITTARIUS.");
         }
     }
 
-    function child(){
+    function check2(){
         let child = document.getElementById("child").value
         console.log("child",child)
 
-        if ("yes") {
-            alert = "Of Course NOT Try again";
+        if (child == "yes") {
+            alert("Of Course NOT Try again");
             
         } else {
-            alert = "Correct! I have a handsome 3year old son"
+            alert("Correct! I have a handsome 3year old son");
         }
 
 
     }
 
-alert("So you want to know about the face behind the screen? Thats a odd request usually noone asks any questions. But I guess im in the mood to spill the beans. All you have to do is guess five random facts about me ( with yes or no answers) I will go into details about the fact as a reward. Sounds Fair ?")
+        function check3(){
+            let HS =document.getElementById("HS").value
+            console.log("HS",HS)
+
+            if (HS == "yes") {
+                alert("Sorry Try again" );
+            } else {
+                alert("Correct! Actually in Highschool I wanted to almost everything and couldn't decide on one thing")
+            }
+        }
+
+        function check4(){
+            let old = document.getElementById("old").value
+            console.log("old",old)
+
+            if (old == "yes") {
+                alert("Thats Correct ! I love farm animals and it would be ideally cool to live on a farm and take care of them");
+            } else {
+                alert("Incorrect Try Again");
+            }
+        }
+
+        function check5(){
+
+            let planet = document.getElementById("planet").value
+            console.log("planet",planet)
+
+            if (planet == "yes") {
+                alert("Yes thats correct! I have always loved Juptier. and Yes Earth does tend to be very ghetto");
+            } else {
+                alert("That isn't right try again");
+            }
+        }
+
+let name = prompt("what's your name before we begin?")
+
+alert("So"+" "+ name+ " you want to know about the face behind the screen? Thats a odd request usually noone asks any questions. But I guess im in the mood to spill the beans. All you have to do is guess five random facts about me ( with yes or no answers) I will go into details about the fact as a reward. Sounds Fair ?")
 
 </script>
 </body>
