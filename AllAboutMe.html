@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+    <style>
+       body{background-color: Pink;
+        margin-left: 25px;
+        border: solid;
+        border-color: blue lightblue;
+        
+    } 
+    </style>
+</head>
+<h2> Random Facts You Wanna Know</h2>
+<body>
+
+    <ol>
+        <li> I am a proud Leo. </li> <input type="text" id="sign">  <button id="check1">Check</button>
+        <li> I have a beautiful little girl thats 7 years old.</li> <input type="text" id="child"> <button>Check</button>
+        <li> Coding was what I wanted to do in highschool.  </li> <input type="text" id="HS"> <button>Check</button>
+        <li> When i get old I want to live on a farm with a few farm animals.</li> <input type="text" id="old"> <button>Check</button>
+        <li> My favorite planet is Jupiter because Earth is ghetto.</li> <input type="text" id="planet"> <button>Check</button>
+    </ol>
+
+
+<script>
+    function check1(){
+        let sign = document.getElementById("sign").value
+        console.log("sign",sign)
+
+        if ("yes"){
+            alert("Absoultly not try again");
+        } else {
+            alert("Correct! I was Born Dec 13th which makes me a indepedent, free spirited SAGITTARIUS.");
+        }
+    }
+
+    function child(){
+        let child = document.getElementById("child").value
+        console.log("child",child)
+
+        if ("yes") {
+            alert = "Of Course NOT Try again";
+            
+        } else {
+            alert = "Correct! I have a handsome 3year old son"
+        }
+
+
+    }
+
+alert("So you want to know about the face behind the screen? Thats a odd request usually noone asks any questions. But I guess im in the mood to spill the beans. All you have to do is guess five random facts about me ( with yes or no answers) I will go into details about the fact as a reward. Sounds Fair ?")
+
+</script>
+</body>
+</html>
