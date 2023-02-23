@@ -1,6 +1,7 @@
 <!Doctype html>
 <html>
 <head>
+    <script src="AllAboutMe.js"></script>
     <style>
        body{background-color: Pink;
         margin-left: 25px;
@@ -19,73 +20,31 @@
         <li> Coding was what I wanted to do in highschool.  </li> <input type="text" id="HS"> <button id="check3" onclick="check3 ()">Check</button>
         <li> When i get old I want to live on a farm with a few farm animals.</li> <input type="text" id="old"> <button id="check4" onclick="check4 ()">Check</button>
         <li> My favorite planet is Jupiter because Earth is ghetto.</li> <input type="text" id="planet"> <button id="check5" onclick="check5()">Check</button>
+        <li> I also have a favorite number. Can you guess what it is? Its between 1-20 and i'll give you three tries.</li> <Button id="check6" onclick="check6()">Check</Button>
+        <li> Can you guess one of my favorite cookies? This is a hard one so i'll give you six tries.</li> <button id="check7" onclick="check7()">Submit your guess</button>
     </ol>
 
+<h2>Job that worked me </h2>
+<ul>
+    <li>Amazon Driver</li>
+    <li>Insurance Agent</li>
+    <li>Warehouse Shipping agent</li>
+    <li>Wfh Agent</li>
+    <li>Panera</li>
+</ul>
 
-<script>
-
-
-    function check1(){
-        let answer = document.getElementById("sign").value
-        if (answer == "yes"|| answer == "y"){
-            alert("Absoultly not try again");
-        } else {
-            alert("Correct! I was Born Dec 13th which makes me a indepedent, free spirited SAGITTARIUS.");
-        }
-    }
-
-    function check2(){
-        let child = document.getElementById("child").value
-        console.log("child",child)
-
-        if (child == "yes") {
-            alert("Of Course NOT Try again");
-            
-        } else {
-            alert("Correct! I have a handsome 3year old son");
-        }
-
-
-    }
-
-        function check3(){
-            let HS =document.getElementById("HS").value
-            console.log("HS",HS)
-
-            if (HS == "yes") {
-                alert("Sorry Try again" );
-            } else {
-                alert("Correct! Actually in Highschool I wanted to almost everything and couldn't decide on one thing")
-            }
-        }
-
-        function check4(){
-            let old = document.getElementById("old").value
-            console.log("old",old)
-
-            if (old == "yes") {
-                alert("Thats Correct ! I love farm animals and it would be ideally cool to live on a farm and take care of them");
-            } else {
-                alert("Incorrect Try Again");
-            }
-        }
-
-        function check5(){
-
-            let planet = document.getElementById("planet").value
-            console.log("planet",planet)
-
-            if (planet == "yes") {
-                alert("Yes thats correct! I have always loved Juptier. and Yes Earth does tend to be very ghetto");
-            } else {
-                alert("That isn't right try again");
-            }
-        }
-
-let name = prompt("what's your name before we begin?")
-
-alert("So"+" "+ name+ " you want to know about the face behind the screen? Thats a odd request usually noone asks any questions. But I guess im in the mood to spill the beans. All you have to do is guess five random facts about me ( with yes or no answers) I will go into details about the fact as a reward. Sounds Fair ?")
-
-</script>
+<h2>Top Ten fictional foods I wish I could try</h2>
+<ol>
+    <li>Krusty Krabs Pizza</li>
+    <li>Pizza from Goofy Movie</li>
+    <li>Tiana Gumbo</li>
+    <li>Any thing from Food Wars</li>
+    <li>Ratatouille</li>
+    <li>The Naco From Kim Possible</li>
+    <li>Tiana's Beignets</li>
+    <li>The grey stuff from beauty and the beast</li>
+    <li>Super Duper Sandwich from Scooby-Doo</li>
+    <li>Reptar Bars</li>
+</ol>
 </body>
 </html>
