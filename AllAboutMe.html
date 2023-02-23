@@ -4,16 +4,47 @@
     <script src="AllAboutMe.js"></script>
     <style>
        body{background-color: Pink;
-        margin-left: 25px;
-        border: solid;
+        border: solid 10px;
         border-color: blue lightblue;
         
-    } 
+    }
+    .felxbox-container{
+        display: flex
+    }
+
+    .flexbox-item{
+        float: right;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        border: 5px solid lightblue;
+        background-color: lightgrey;
+        font-size: 95%;
+        
+    }
+    .tired{
+    }
+
     </style>
 </head>
 <h2> Random Facts You Wanna Know</h2>
 <body>
-
+    <div class="flexbox-container">
+    <div class="flexbox-item flexbox-item-1">
+        <h2>Top Ten fictional foods I wish I could try</h2>
+<ol>
+    <li>Pizza from Goofy Movie</li>
+    <li>Any thing from Food Wars</li>
+    <li>Tiana Gumbo</li>
+    <li>Tiana's Beignets</li>
+    <li>Kronk's Hot Spinach Puffs</li>
+    <li>Remy's Omelette</li>
+    <li>Spirited Away spread of food</li>
+    <li>The grey stuff from beauty and the beast</li>
+    <li>Super Duper Sandwich from Scooby-Doo</li>
+    <li>Reptar Bars</li>
+    </div>
+    </div>    
     <ol>
         <li> I am a proud Leo. </li> <input type="text" id="sign">  <button id="check1" onclick="check1()">Check</button> 
         <li> I have a beautiful little girl thats 7 years old.</li> <input type="text" id="child"> <button id="check2" onclick="check2 ()">Check</button>
@@ -26,6 +57,7 @@
 
 <h2>Job that worked me </h2>
 <ul>
+    <div class="tired"><img src="https://media.tenor.com/WPEZvv6CeIEAAAAM/morning-tired.gif" alt="tired" max width="120" max height="120"></div>
     <li>Amazon Driver</li>
     <li>Insurance Agent</li>
     <li>Warehouse Shipping agent</li>
@@ -33,18 +65,6 @@
     <li>Panera</li>
 </ul>
 
-<h2>Top Ten fictional foods I wish I could try</h2>
-<ol>
-    <li>Pizza from Goofy Movie</li>
-    <li>Any thing from Food Wars</li>
-    <li>Tiana Gumbo</li>
-    <li>Tiana's Beignets</li>
-    <li>Kronk's Hot Spinach Puffs</li>
-    <li>Remy's Omelette</li>
-    <li>Spirited Away spread of food</li>
-    <li>The grey stuff from beauty and the beast</li>
-    <li>Super Duper Sandwich from Scooby-Doo</li>
-    <li>Reptar Bars</li>
-</ol>
+
 </body>
 </html>
